@@ -2,3 +2,5 @@ Name    : VASHANTHAKUMAR K S
 Roll No : 24MCR124
 Dept    : MCA
 Fav Prg : Python
+Fav Color: Blue
+Moble Model: VIVO Y11
