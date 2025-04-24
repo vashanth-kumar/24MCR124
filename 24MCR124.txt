@@ -4,3 +4,7 @@ Dept    : MCA
 Fav Prg : Python
 Fav Color: Blue
 Moble Model: VIVO Y11
+
+certificate complete 
+docker desktop running
+url prepation
