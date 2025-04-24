@@ -7,56 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1jRMAxOGnIAtoPoPK1SXUXLyrbctxxSqw
 """
 
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# import seaborn as sns
-# from sklearn.model_selection import train_test_split, cross_val_score
-# from sklearn.ensemble import RandomForestClassifier
-# from sklearn.preprocessing import StandardScaler
-# from sklearn.metrics import accuracy_score, classification_report
-
-# # Step 1: Load the dataset
-# df = pd.read_csv('Iris.csv')
-
-# # Step 2: Preprocess the data
-# df = df.drop(columns=['Id'])  # Remove ID column
-# print("First 20 rows:\n", df.head(20))
-# print("Shape of dataset:", df.shape)
-# print("Missing values:\n", df.isnull().sum())
-# print("Class distribution:\n", df['Species'].value_counts())
-
-# # Step 3: Visualize the data
-# sns.pairplot(df, hue="Species")
-# plt.suptitle("Iris Feature Pairplots", y=1.02)
-# plt.savefig('iris_pairplot.png')
-# plt.show()
-
-# # Step 4: Feature and target selection
-# X = df.drop(columns=['Species'])  # Features
-# y = df['Species']  # Target
-
-# # Optional: Scaling (not required for Random Forest, but good practice)
-# scaler = StandardScaler()
-# X_scaled = scaler.fit_transform(X)
-
-# # Step 5: Train/Test Split
-# X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
-
-# # Step 6: Train the model
-# model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=42)
-# model.fit(X_train, y_train)
-
-# # Step 7: Evaluate the model
-# y_pred = model.predict(X_test)
-# accuracy = accuracy_score(y_test, y_pred)
-# print(f"\nTest Accuracy: {accuracy:.2f}")
-# print("Classification Report:\n", classification_report(y_test, y_pred))
-
-# # Step 8: Cross-validation
-# cv_scores = cross_val_score(model, X_scaled, y, cv=5)
-# print("Cross-validation scores:", cv_scores)
-# print("Mean CV Accuracy:", cv_scores.mean())
-
 from pandas import read_csv
 from matplotlib import pyplot
 from sklearn.linear_model import LogisticRegression
